@@ -1,0 +1,479 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateField component Props containerStyle 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      Object {
+        "marginVertical": 20,
+      },
+    ]
+  }
+>
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    returnKeyType="done"
+    value=""
+  />
+</View>
+`;
+
+exports[`DateField component Props defaultValue 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value="25"
+  />
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value="3"
+  />
+  <Input
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    returnKeyType="done"
+    value="2021"
+  />
+</View>
+`;
+
+exports[`DateField component Props disabled 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <Input
+    editable={false}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={false}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={false}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    returnKeyType="done"
+    value=""
+  />
+</View>
+`;
+
+exports[`DateField component Props labelDate 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Input date"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    returnKeyType="done"
+    value=""
+  />
+</View>
+`;
+
+exports[`DateField component Props labelMonth 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Input month"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    returnKeyType="done"
+    value=""
+  />
+</View>
+`;
+
+exports[`DateField component Props labelYear 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Input year"
+    returnKeyType="done"
+    value=""
+  />
+</View>
+`;
+
+exports[`DateField component Props onSubmit 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    returnKeyType="done"
+    value=""
+  />
+</View>
+`;
+
+exports[`DateField component Props styleInput 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    }
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    }
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    returnKeyType="done"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    }
+    value=""
+  />
+</View>
+`;
+
+exports[`DateField component Props testID 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+  testID="date_input"
+>
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    returnKeyType="done"
+    value=""
+  />
+</View>
+`;
+
+exports[`DateField component should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
+  <Input
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    returnKeyType="done"
+    value=""
+  />
+</View>
+`;

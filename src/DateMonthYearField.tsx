@@ -1,13 +1,5 @@
 import React, { useRef, useState } from 'react';
-import {
-  View,
-  StyleSheet,
-  Keyboard,
-  TextInput,
-  StyleProp,
-  ViewStyle,
-  TextStyle,
-} from 'react-native';
+import { View, StyleSheet, Keyboard, TextInput } from 'react-native';
 import {
   int,
   formatYearDigits,
@@ -15,23 +7,14 @@ import {
   getDateDefault,
   daysInMonth,
 } from './utils';
-
-export type DateFieldProps = {
-  testID?: string;
-  containerStyle?: StyleProp<ViewStyle>;
-  styleInput?: StyleProp<TextStyle>;
-  labelDate?: string;
-  labelMonth?: string;
-  labelYear?: string;
-  defaultValue?: Date;
-  onSubmit?(value: Date): void;
-  disabled?: boolean;
-};
+import Input from './Input';
+import type { DateFieldProps } from './types';
 
 const defaultProps: DateFieldProps = {
   labelDate: 'Date',
   labelMonth: 'Month',
   labelYear: 'Year',
+  editable: true,
 };
 
 const ReactNativeDateField: React.FunctionComponent<DateFieldProps> = ({
@@ -43,7 +26,7 @@ const ReactNativeDateField: React.FunctionComponent<DateFieldProps> = ({
   labelYear,
   defaultValue,
   onSubmit,
-  disabled,
+  editable,
 }) => {
   const refMonth = useRef<TextInput>(null);
   const refYear = useRef<TextInput>(null);
@@ -107,46 +90,33 @@ const ReactNativeDateField: React.FunctionComponent<DateFieldProps> = ({
 
   return (
     <View {...{ testID }} style={[styles.container, containerStyle]}>
-      <TextInput
+      <Input
         value={dateValue.date}
-        maxLength={2}
-        blurOnSubmit={false}
-        returnKeyType="next"
-        keyboardType="numeric"
-        editable={!disabled}
         placeholder={labelDate}
-        style={[styles.input, styleInput]}
+        style={styleInput}
         onChangeText={onChangeDate}
-        onBlur={onBlur}
         onSubmitEditing={() => refMonth.current?.focus()}
+        {...{ editable, onBlur }}
       />
-      <TextInput
+      <Input
         ref={refMonth}
         value={dateValue.month}
-        maxLength={2}
-        blurOnSubmit={false}
-        returnKeyType="next"
-        keyboardType="numeric"
-        editable={!disabled}
         placeholder={labelMonth}
-        style={[styles.input, styleInput]}
+        style={styleInput}
         onChangeText={onChangeMonth}
-        onBlur={onBlur}
         onSubmitEditing={() => refYear.current?.focus()}
+        {...{ editable, onBlur }}
       />
-      <TextInput
+      <Input
         ref={refYear}
         value={dateValue.year}
         maxLength={4}
-        blurOnSubmit={false}
         returnKeyType="done"
-        keyboardType="numeric"
-        editable={!disabled}
         placeholder={labelYear}
-        style={[styles.input, styleInput]}
+        style={styleInput}
         onChangeText={onChangeYear}
-        onBlur={onBlur}
         onSubmitEditing={() => Keyboard.dismiss()}
+        {...{ editable, onBlur }}
       />
     </View>
   );

@@ -12,7 +12,11 @@ const App = () => {
         labelYear="Input year"
         onSubmit={(value) => console.log(value)}
       />
-      <DateField disabled defaultValue={new Date()} styleInput={styles.input} />
+      <DateField
+        editable={false}
+        defaultValue={new Date()}
+        styleInput={styles.input}
+      />
       <DateField defaultValue={new Date()} styleInput={styles.input} />
       <DateField
         containerStyle={styles.underline}
