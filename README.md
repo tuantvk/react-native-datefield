@@ -17,9 +17,7 @@
 
 <br />
 
-<p align="center">
-  <img width="310" src="resource/example.png" alt="react-native-datefield" />
-</p>
+![react-native-datefield](resource/example.png)
 
 
 ## Installation
