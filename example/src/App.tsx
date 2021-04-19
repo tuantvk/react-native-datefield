@@ -10,32 +10,28 @@ const App = () => {
     <View style={styles.container}>
       <DateField onSubmit={(value) => console.log(value)} />
       <DateField
-        labelDate="Input date"
-        labelMonth="Input month"
-        labelYear="Input year"
+        styleInput={styles.underline}
         onSubmit={(value) => console.log(value)}
       />
       <DateField
-        editable={false}
-        defaultValue={new Date()}
-        styleInput={styles.input}
-      />
-      <DateField defaultValue={new Date()} styleInput={styles.input} />
-      <DateField
-        hideDate={true}
         styleInput={styles.input}
         onSubmit={(value) => console.log('DateField', value)}
       />
       <DateField
-        styleInput={styles.input}
+        hideDate
+        styleInput={[styles.input, styles.inputStart]}
+        containerStyle={styles.containerStyle}
         onSubmit={(value) => console.log('DateField', value)}
       />
       <MonthDateYearField
-        styleInput={styles.input}
+        labelDate="Enter date"
+        labelMonth="Enter month"
+        labelYear="Enter year"
+        containerStyle={styles.inputBackground}
         onSubmit={(value) => console.log('MonthDateYearField', value)}
       />
       <YearMonthDateField
-        styleInput={styles.input}
+        styleInput={styles.inputBorder}
         onSubmit={(value) => console.log('YearMonthDateField', value)}
       />
     </View>
@@ -49,16 +45,33 @@ const styles = StyleSheet.create({
   input: {
     width: '30%',
     borderRadius: 8,
-    backgroundColor: '#ededed',
+    backgroundColor: '#f4f4f4',
     marginBottom: 20,
   },
   underline: {
-    marginHorizontal: 30,
-  },
-  inputUnderline: {
     width: '30%',
     borderBottomColor: '#cacaca',
     borderBottomWidth: 1,
+    marginBottom: 20,
+  },
+  containerStyle: {
+    justifyContent: 'flex-start',
+  },
+  inputStart: {
+    marginRight: 20,
+  },
+  inputBorder: {
+    width: '30%',
+    borderRadius: 8,
+    borderColor: '#cacaca',
+    borderWidth: 1,
+    marginBottom: 20,
+  },
+  inputBackground: {
+    borderRadius: 15,
+    backgroundColor: '#f4f4f4',
+    paddingHorizontal: 25,
+    marginBottom: 20,
   },
 });
 

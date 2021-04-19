@@ -106,6 +106,7 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
       labelYear,
       editable,
       hideDate,
+      placeholderTextColor,
     } = this.props;
 
     return (
@@ -118,7 +119,7 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
             onChangeText={this.onChangeDate}
             onSubmitEditing={() => this.refMonth.current?.focus()}
             onBlur={this.onBlur}
-            {...{ editable }}
+            {...{ editable, placeholderTextColor }}
           />
         )}
         <Input
@@ -129,7 +130,7 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
           onChangeText={this.onChangeMonth}
           onSubmitEditing={() => this.refYear.current?.focus()}
           onBlur={this.onBlur}
-          {...{ editable }}
+          {...{ editable, placeholderTextColor }}
         />
         <Input
           ref={this.refYear}
@@ -141,7 +142,7 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
           onChangeText={this.onChangeYear}
           onSubmitEditing={() => Keyboard.dismiss()}
           onBlur={this.onBlur}
-          {...{ editable }}
+          {...{ editable, placeholderTextColor }}
         />
       </View>
     );

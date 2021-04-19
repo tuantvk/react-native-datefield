@@ -72,5 +72,13 @@ describe('DateMonthYearField component', () => {
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });
+
+    it('placeholderTextColor', () => {
+      const component = shallow(
+        <DateMonthYearField placeholderTextColor="#000000" />
+      );
+      expect(component.length).toBe(1);
+      expect(toJson(component)).toMatchSnapshot();
+    });
   });
 });

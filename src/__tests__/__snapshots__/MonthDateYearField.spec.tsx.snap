@@ -324,6 +324,55 @@ exports[`MonthDateYearField component Props onSubmit 1`] = `
 </View>
 `;
 
+exports[`MonthDateYearField component Props placeholderTextColor 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <ForwardRef
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    placeholderTextColor="#000000"
+    returnKeyType="next"
+    value=""
+  />
+  <ForwardRef
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    placeholderTextColor="#000000"
+    returnKeyType="next"
+    value=""
+  />
+  <ForwardRef
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    placeholderTextColor="#000000"
+    returnKeyType="done"
+    value=""
+  />
+</View>
+`;
+
 exports[`MonthDateYearField component Props styleInput 1`] = `
 <View
   style={

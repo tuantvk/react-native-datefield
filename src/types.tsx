@@ -11,4 +11,5 @@ export type DateFieldProps = {
   onSubmit?(value: Date): void;
   editable?: boolean;
   hideDate?: boolean;
+  placeholderTextColor?: string;
 };

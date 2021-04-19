@@ -7,9 +7,9 @@ type Props = {
 };
 
 export default ({ date, month, year }: Props): string => {
-  let day = new Date(int(year), int(month), 0).getDate();
-  if (int(date) > day) {
-    return String(day);
+  let current = new Date(int(year), int(month), 0).getDate();
+  if (int(date) > current) {
+    return String(current);
   }
   return date;
 };
