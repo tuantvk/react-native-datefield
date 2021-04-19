@@ -1,25 +1,25 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import DateMonthYearField from '../DateMonthYearField';
+import MonthDateYearField from '../MonthDateYearField';
 
-describe('DateMonthYearField component', () => {
+describe('MonthDateYearField component', () => {
   it('should match snapshot', () => {
-    const component = shallow(<DateMonthYearField />);
+    const component = shallow(<MonthDateYearField />);
     expect(component.length).toBe(1);
     expect(toJson(component)).toMatchSnapshot();
   });
 
   describe('Props', () => {
     it('testID', () => {
-      const component = shallow(<DateMonthYearField testID="date_input" />);
+      const component = shallow(<MonthDateYearField testID="date_input" />);
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });
 
     it('containerStyle', () => {
       const component = shallow(
-        <DateMonthYearField containerStyle={{ marginVertical: 20 }} />
+        <MonthDateYearField containerStyle={{ marginVertical: 20 }} />
       );
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
@@ -27,48 +27,48 @@ describe('DateMonthYearField component', () => {
 
     it('styleInput', () => {
       const component = shallow(
-        <DateMonthYearField styleInput={{ fontSize: 15 }} />
+        <MonthDateYearField styleInput={{ fontSize: 15 }} />
       );
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });
 
     it('labelDate', () => {
-      const component = shallow(<DateMonthYearField labelDate="Input date" />);
+      const component = shallow(<MonthDateYearField labelDate="Input date" />);
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });
 
     it('labelMonth', () => {
       const component = shallow(
-        <DateMonthYearField labelMonth="Input month" />
+        <MonthDateYearField labelMonth="Input month" />
       );
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });
 
     it('labelYear', () => {
-      const component = shallow(<DateMonthYearField labelYear="Input year" />);
+      const component = shallow(<MonthDateYearField labelYear="Input year" />);
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });
 
     it('defaultValue', () => {
       const component = shallow(
-        <DateMonthYearField defaultValue={new Date('2021-03-25')} />
+        <MonthDateYearField defaultValue={new Date('2021-03-25')} />
       );
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });
 
     it('onSubmit', () => {
-      const component = shallow(<DateMonthYearField onSubmit={() => {}} />);
+      const component = shallow(<MonthDateYearField onSubmit={() => {}} />);
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });
 
     it('editable', () => {
-      const component = shallow(<DateMonthYearField editable={false} />);
+      const component = shallow(<MonthDateYearField editable={false} />);
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });

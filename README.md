@@ -1,6 +1,21 @@
-# react-native-datefield
+<h1 align="center">react-native-datefield</h1>
 
-A simple React Native date input component
+<br />
+
+<p align="center">
+  A simple React Native date input component
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/react-native-datefield"><img src="https://img.shields.io/npm/v/react-native-datefield.svg?style=flat-square"></a>
+  <a href="https://github.com/tuantvk/react-native-datefield"><img src="https://img.shields.io/github/stars/tuantvk/react-native-datefield?style=flat-square"></a>
+  <a href="https://github.com/tuantvk/react-native-datefield"><img src="https://img.shields.io/github/issues/tuantvk/react-native-datefield?style=flat-square"></a>
+  <a href="https://github.com/tuantvk/react-native-datefield"><img src="https://img.shields.io/github/forks/tuantvk/react-native-datefield?style=flat-square"></a>
+  <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square"></a>
+</p>
+
+<br />
 
 <p align="center">
   <img width="310" src="resource/example.png" alt="react-native-datefield" />
@@ -50,7 +65,8 @@ import DateField from 'react-native-datefield';
 | labelYear       | `Year`        | string      | add a label for year input |
 | defaultValue    | -             | Date        | an initial value that will change when the user starts typing |
 | onSubmit        | -             | (Date) => {}| callback that is called when blur and return `Date` value |
-| editable        | `false`       | boolean     | if `false`, text is not editable. |
+| editable        | `false`       | boolean     | if `false`, text is not editable |
+| hideDate        | `false`       | boolean     | if `true`, `Date` input is not display |
 
 
 ## Contributing

@@ -1,5 +1,5 @@
 import React, { createRef } from 'react';
-import { View, StyleSheet, Keyboard, TextInput } from 'react-native';
+import { View, Keyboard, TextInput } from 'react-native';
 import {
   int,
   isValidDate,
@@ -10,6 +10,7 @@ import {
 } from './utils';
 import Input from './Input';
 import type { DateFieldProps } from './types';
+import styles from './styles';
 
 type State = {
   date: string;
@@ -42,7 +43,7 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
     const month = getOnlyNumber(int(value) > 12 ? '12' : value);
     this.setState({
       month,
-      date: daysInMonth(this.state.date, month),
+      date: daysInMonth(this.state),
     });
     if (month.length === 2) {
       this.refYear.current?.focus();
@@ -62,22 +63,22 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
 
   onBlur = () => {
     const current = { ...this.state };
-    if (current.date === '0') {
+    if (int(current.date) === 0 || this.props.hideDate) {
       current.date = '01';
     }
     if (current.date.length === 1) {
       current.date = current.date.padStart(2, '0');
     }
-    if (current.month === '0') {
+    if (int(current.month) === 0) {
       current.month = '01';
     }
     if (current.month.length === 1) {
       current.month = current.month.padStart(2, '0');
     }
-    if (daysInMonth(current.date, current.month) !== current.date) {
-      current.date = daysInMonth(current.date, current.month);
+    if (daysInMonth(current) !== current.date) {
+      current.date = daysInMonth(current);
     }
-    if (current.year === '0') {
+    if (int(current.year) === 0) {
       current.year = `${new Date().getFullYear()}`;
     }
     if (current.year.length > 1 && current.year.length < 4) {
@@ -104,19 +105,22 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
       labelMonth,
       labelYear,
       editable,
+      hideDate,
     } = this.props;
 
     return (
       <View {...{ testID }} style={[styles.container, containerStyle]}>
-        <Input
-          value={date}
-          placeholder={labelDate}
-          style={styleInput}
-          onChangeText={this.onChangeDate}
-          onSubmitEditing={() => this.refMonth.current?.focus()}
-          onBlur={this.onBlur}
-          {...{ editable }}
-        />
+        {!hideDate && (
+          <Input
+            value={date}
+            placeholder={labelDate}
+            style={styleInput}
+            onChangeText={this.onChangeDate}
+            onSubmitEditing={() => this.refMonth.current?.focus()}
+            onBlur={this.onBlur}
+            {...{ editable }}
+          />
+        )}
         <Input
           ref={this.refMonth}
           value={month}
@@ -143,16 +147,5 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  input: {
-    textAlign: 'center',
-  },
-});
 
 export default DateMonthYearField;

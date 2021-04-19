@@ -8,7 +8,7 @@ import DateField, {
 const App = () => {
   return (
     <View style={styles.container}>
-      {/* <DateField onSubmit={(value) => console.log(value)} />
+      <DateField onSubmit={(value) => console.log(value)} />
       <DateField
         labelDate="Input date"
         labelMonth="Input month"
@@ -20,7 +20,12 @@ const App = () => {
         defaultValue={new Date()}
         styleInput={styles.input}
       />
-      <DateField defaultValue={new Date()} styleInput={styles.input} /> */}
+      <DateField defaultValue={new Date()} styleInput={styles.input} />
+      <DateField
+        hideDate={true}
+        styleInput={styles.input}
+        onSubmit={(value) => console.log('DateField', value)}
+      />
       <DateField
         styleInput={styles.input}
         onSubmit={(value) => console.log('DateField', value)}

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DateMonthYearField component Props containerStyle 1`] = `
+exports[`YearMonthDateField component Props containerStyle 1`] = `
 <View
   style={
     Array [
@@ -17,12 +17,12 @@ exports[`DateMonthYearField component Props containerStyle 1`] = `
 >
   <ForwardRef
     editable={true}
-    maxLength={2}
+    maxLength={4}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
-    returnKeyType="next"
+    placeholder="Year"
+    returnKeyType="done"
     value=""
   />
   <ForwardRef
@@ -37,18 +37,18 @@ exports[`DateMonthYearField component Props containerStyle 1`] = `
   />
   <ForwardRef
     editable={true}
-    maxLength={4}
+    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Year"
-    returnKeyType="done"
+    placeholder="Date"
+    returnKeyType="next"
     value=""
   />
 </View>
 `;
 
-exports[`DateMonthYearField component Props defaultValue 1`] = `
+exports[`YearMonthDateField component Props defaultValue 1`] = `
 <View
   style={
     Array [
@@ -63,13 +63,13 @@ exports[`DateMonthYearField component Props defaultValue 1`] = `
 >
   <ForwardRef
     editable={true}
-    maxLength={2}
+    maxLength={4}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
-    returnKeyType="next"
-    value="25"
+    placeholder="Year"
+    returnKeyType="done"
+    value="2021"
   />
   <ForwardRef
     editable={true}
@@ -83,18 +83,18 @@ exports[`DateMonthYearField component Props defaultValue 1`] = `
   />
   <ForwardRef
     editable={true}
-    maxLength={4}
+    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Year"
-    returnKeyType="done"
-    value="2021"
+    placeholder="Date"
+    returnKeyType="next"
+    value="25"
   />
 </View>
 `;
 
-exports[`DateMonthYearField component Props editable 1`] = `
+exports[`YearMonthDateField component Props editable 1`] = `
 <View
   style={
     Array [
@@ -109,12 +109,12 @@ exports[`DateMonthYearField component Props editable 1`] = `
 >
   <ForwardRef
     editable={false}
-    maxLength={2}
+    maxLength={4}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
-    returnKeyType="next"
+    placeholder="Year"
+    returnKeyType="done"
     value=""
   />
   <ForwardRef
@@ -129,18 +129,18 @@ exports[`DateMonthYearField component Props editable 1`] = `
   />
   <ForwardRef
     editable={false}
-    maxLength={4}
+    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Year"
-    returnKeyType="done"
+    placeholder="Date"
+    returnKeyType="next"
     value=""
   />
 </View>
 `;
 
-exports[`DateMonthYearField component Props labelDate 1`] = `
+exports[`YearMonthDateField component Props labelDate 1`] = `
 <View
   style={
     Array [
@@ -153,6 +153,26 @@ exports[`DateMonthYearField component Props labelDate 1`] = `
     ]
   }
 >
+  <ForwardRef
+    editable={true}
+    maxLength={4}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Year"
+    returnKeyType="done"
+    value=""
+  />
+  <ForwardRef
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
   <ForwardRef
     editable={true}
     maxLength={2}
@@ -163,30 +183,10 @@ exports[`DateMonthYearField component Props labelDate 1`] = `
     returnKeyType="next"
     value=""
   />
-  <ForwardRef
-    editable={true}
-    maxLength={2}
-    onBlur={[Function]}
-    onChangeText={[Function]}
-    onSubmitEditing={[Function]}
-    placeholder="Month"
-    returnKeyType="next"
-    value=""
-  />
-  <ForwardRef
-    editable={true}
-    maxLength={4}
-    onBlur={[Function]}
-    onChangeText={[Function]}
-    onSubmitEditing={[Function]}
-    placeholder="Year"
-    returnKeyType="done"
-    value=""
-  />
 </View>
 `;
 
-exports[`DateMonthYearField component Props labelMonth 1`] = `
+exports[`YearMonthDateField component Props labelMonth 1`] = `
 <View
   style={
     Array [
@@ -201,12 +201,12 @@ exports[`DateMonthYearField component Props labelMonth 1`] = `
 >
   <ForwardRef
     editable={true}
-    maxLength={2}
+    maxLength={4}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
-    returnKeyType="next"
+    placeholder="Year"
+    returnKeyType="done"
     value=""
   />
   <ForwardRef
@@ -221,18 +221,18 @@ exports[`DateMonthYearField component Props labelMonth 1`] = `
   />
   <ForwardRef
     editable={true}
-    maxLength={4}
+    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Year"
-    returnKeyType="done"
+    placeholder="Date"
+    returnKeyType="next"
     value=""
   />
 </View>
 `;
 
-exports[`DateMonthYearField component Props labelYear 1`] = `
+exports[`YearMonthDateField component Props labelYear 1`] = `
 <View
   style={
     Array [
@@ -245,26 +245,6 @@ exports[`DateMonthYearField component Props labelYear 1`] = `
     ]
   }
 >
-  <ForwardRef
-    editable={true}
-    maxLength={2}
-    onBlur={[Function]}
-    onChangeText={[Function]}
-    onSubmitEditing={[Function]}
-    placeholder="Date"
-    returnKeyType="next"
-    value=""
-  />
-  <ForwardRef
-    editable={true}
-    maxLength={2}
-    onBlur={[Function]}
-    onChangeText={[Function]}
-    onSubmitEditing={[Function]}
-    placeholder="Month"
-    returnKeyType="next"
-    value=""
-  />
   <ForwardRef
     editable={true}
     maxLength={4}
@@ -275,10 +255,30 @@ exports[`DateMonthYearField component Props labelYear 1`] = `
     returnKeyType="done"
     value=""
   />
+  <ForwardRef
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
+  <ForwardRef
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value=""
+  />
 </View>
 `;
 
-exports[`DateMonthYearField component Props onSubmit 1`] = `
+exports[`YearMonthDateField component Props onSubmit 1`] = `
 <View
   style={
     Array [
@@ -291,26 +291,6 @@ exports[`DateMonthYearField component Props onSubmit 1`] = `
     ]
   }
 >
-  <ForwardRef
-    editable={true}
-    maxLength={2}
-    onBlur={[Function]}
-    onChangeText={[Function]}
-    onSubmitEditing={[Function]}
-    placeholder="Date"
-    returnKeyType="next"
-    value=""
-  />
-  <ForwardRef
-    editable={true}
-    maxLength={2}
-    onBlur={[Function]}
-    onChangeText={[Function]}
-    onSubmitEditing={[Function]}
-    placeholder="Month"
-    returnKeyType="next"
-    value=""
-  />
   <ForwardRef
     editable={true}
     maxLength={4}
@@ -321,10 +301,30 @@ exports[`DateMonthYearField component Props onSubmit 1`] = `
     returnKeyType="done"
     value=""
   />
+  <ForwardRef
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
+  <ForwardRef
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value=""
+  />
 </View>
 `;
 
-exports[`DateMonthYearField component Props styleInput 1`] = `
+exports[`YearMonthDateField component Props styleInput 1`] = `
 <View
   style={
     Array [
@@ -337,36 +337,6 @@ exports[`DateMonthYearField component Props styleInput 1`] = `
     ]
   }
 >
-  <ForwardRef
-    editable={true}
-    maxLength={2}
-    onBlur={[Function]}
-    onChangeText={[Function]}
-    onSubmitEditing={[Function]}
-    placeholder="Date"
-    returnKeyType="next"
-    style={
-      Object {
-        "fontSize": 15,
-      }
-    }
-    value=""
-  />
-  <ForwardRef
-    editable={true}
-    maxLength={2}
-    onBlur={[Function]}
-    onChangeText={[Function]}
-    onSubmitEditing={[Function]}
-    placeholder="Month"
-    returnKeyType="next"
-    style={
-      Object {
-        "fontSize": 15,
-      }
-    }
-    value=""
-  />
   <ForwardRef
     editable={true}
     maxLength={4}
@@ -382,10 +352,40 @@ exports[`DateMonthYearField component Props styleInput 1`] = `
     }
     value=""
   />
+  <ForwardRef
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    }
+    value=""
+  />
+  <ForwardRef
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    }
+    value=""
+  />
 </View>
 `;
 
-exports[`DateMonthYearField component Props testID 1`] = `
+exports[`YearMonthDateField component Props testID 1`] = `
 <View
   style={
     Array [
@@ -401,12 +401,12 @@ exports[`DateMonthYearField component Props testID 1`] = `
 >
   <ForwardRef
     editable={true}
-    maxLength={2}
+    maxLength={4}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
-    returnKeyType="next"
+    placeholder="Year"
+    returnKeyType="done"
     value=""
   />
   <ForwardRef
@@ -421,18 +421,18 @@ exports[`DateMonthYearField component Props testID 1`] = `
   />
   <ForwardRef
     editable={true}
-    maxLength={4}
+    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Year"
-    returnKeyType="done"
+    placeholder="Date"
+    returnKeyType="next"
     value=""
   />
 </View>
 `;
 
-exports[`DateMonthYearField component should match snapshot 1`] = `
+exports[`YearMonthDateField component should match snapshot 1`] = `
 <View
   style={
     Array [
@@ -447,12 +447,12 @@ exports[`DateMonthYearField component should match snapshot 1`] = `
 >
   <ForwardRef
     editable={true}
-    maxLength={2}
+    maxLength={4}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
-    returnKeyType="next"
+    placeholder="Year"
+    returnKeyType="done"
     value=""
   />
   <ForwardRef
@@ -467,12 +467,12 @@ exports[`DateMonthYearField component should match snapshot 1`] = `
   />
   <ForwardRef
     editable={true}
-    maxLength={4}
+    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Year"
-    returnKeyType="done"
+    placeholder="Date"
+    returnKeyType="next"
     value=""
   />
 </View>

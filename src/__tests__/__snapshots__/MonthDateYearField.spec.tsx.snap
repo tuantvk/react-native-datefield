@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DateMonthYearField component Props containerStyle 1`] = `
+exports[`MonthDateYearField component Props containerStyle 1`] = `
 <View
   style={
     Array [
@@ -21,7 +21,7 @@ exports[`DateMonthYearField component Props containerStyle 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
+    placeholder="Month"
     returnKeyType="next"
     value=""
   />
@@ -31,7 +31,7 @@ exports[`DateMonthYearField component Props containerStyle 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Month"
+    placeholder="Date"
     returnKeyType="next"
     value=""
   />
@@ -48,7 +48,7 @@ exports[`DateMonthYearField component Props containerStyle 1`] = `
 </View>
 `;
 
-exports[`DateMonthYearField component Props defaultValue 1`] = `
+exports[`MonthDateYearField component Props defaultValue 1`] = `
 <View
   style={
     Array [
@@ -67,9 +67,9 @@ exports[`DateMonthYearField component Props defaultValue 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
+    placeholder="Month"
     returnKeyType="next"
-    value="25"
+    value="3"
   />
   <ForwardRef
     editable={true}
@@ -77,9 +77,9 @@ exports[`DateMonthYearField component Props defaultValue 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Month"
+    placeholder="Date"
     returnKeyType="next"
-    value="3"
+    value="25"
   />
   <ForwardRef
     editable={true}
@@ -94,7 +94,7 @@ exports[`DateMonthYearField component Props defaultValue 1`] = `
 </View>
 `;
 
-exports[`DateMonthYearField component Props editable 1`] = `
+exports[`MonthDateYearField component Props editable 1`] = `
 <View
   style={
     Array [
@@ -113,7 +113,7 @@ exports[`DateMonthYearField component Props editable 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
+    placeholder="Month"
     returnKeyType="next"
     value=""
   />
@@ -123,7 +123,7 @@ exports[`DateMonthYearField component Props editable 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Month"
+    placeholder="Date"
     returnKeyType="next"
     value=""
   />
@@ -140,7 +140,7 @@ exports[`DateMonthYearField component Props editable 1`] = `
 </View>
 `;
 
-exports[`DateMonthYearField component Props labelDate 1`] = `
+exports[`MonthDateYearField component Props labelDate 1`] = `
 <View
   style={
     Array [
@@ -153,6 +153,16 @@ exports[`DateMonthYearField component Props labelDate 1`] = `
     ]
   }
 >
+  <ForwardRef
+    editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Month"
+    returnKeyType="next"
+    value=""
+  />
   <ForwardRef
     editable={true}
     maxLength={2}
@@ -165,16 +175,6 @@ exports[`DateMonthYearField component Props labelDate 1`] = `
   />
   <ForwardRef
     editable={true}
-    maxLength={2}
-    onBlur={[Function]}
-    onChangeText={[Function]}
-    onSubmitEditing={[Function]}
-    placeholder="Month"
-    returnKeyType="next"
-    value=""
-  />
-  <ForwardRef
-    editable={true}
     maxLength={4}
     onBlur={[Function]}
     onChangeText={[Function]}
@@ -186,7 +186,7 @@ exports[`DateMonthYearField component Props labelDate 1`] = `
 </View>
 `;
 
-exports[`DateMonthYearField component Props labelMonth 1`] = `
+exports[`MonthDateYearField component Props labelMonth 1`] = `
 <View
   style={
     Array [
@@ -199,16 +199,6 @@ exports[`DateMonthYearField component Props labelMonth 1`] = `
     ]
   }
 >
-  <ForwardRef
-    editable={true}
-    maxLength={2}
-    onBlur={[Function]}
-    onChangeText={[Function]}
-    onSubmitEditing={[Function]}
-    placeholder="Date"
-    returnKeyType="next"
-    value=""
-  />
   <ForwardRef
     editable={true}
     maxLength={2}
@@ -221,6 +211,16 @@ exports[`DateMonthYearField component Props labelMonth 1`] = `
   />
   <ForwardRef
     editable={true}
+    maxLength={2}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Date"
+    returnKeyType="next"
+    value=""
+  />
+  <ForwardRef
+    editable={true}
     maxLength={4}
     onBlur={[Function]}
     onChangeText={[Function]}
@@ -232,7 +232,7 @@ exports[`DateMonthYearField component Props labelMonth 1`] = `
 </View>
 `;
 
-exports[`DateMonthYearField component Props labelYear 1`] = `
+exports[`MonthDateYearField component Props labelYear 1`] = `
 <View
   style={
     Array [
@@ -251,7 +251,7 @@ exports[`DateMonthYearField component Props labelYear 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
+    placeholder="Month"
     returnKeyType="next"
     value=""
   />
@@ -261,7 +261,7 @@ exports[`DateMonthYearField component Props labelYear 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Month"
+    placeholder="Date"
     returnKeyType="next"
     value=""
   />
@@ -278,7 +278,7 @@ exports[`DateMonthYearField component Props labelYear 1`] = `
 </View>
 `;
 
-exports[`DateMonthYearField component Props onSubmit 1`] = `
+exports[`MonthDateYearField component Props onSubmit 1`] = `
 <View
   style={
     Array [
@@ -297,7 +297,7 @@ exports[`DateMonthYearField component Props onSubmit 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
+    placeholder="Month"
     returnKeyType="next"
     value=""
   />
@@ -307,7 +307,7 @@ exports[`DateMonthYearField component Props onSubmit 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Month"
+    placeholder="Date"
     returnKeyType="next"
     value=""
   />
@@ -324,7 +324,7 @@ exports[`DateMonthYearField component Props onSubmit 1`] = `
 </View>
 `;
 
-exports[`DateMonthYearField component Props styleInput 1`] = `
+exports[`MonthDateYearField component Props styleInput 1`] = `
 <View
   style={
     Array [
@@ -343,7 +343,7 @@ exports[`DateMonthYearField component Props styleInput 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
+    placeholder="Month"
     returnKeyType="next"
     style={
       Object {
@@ -358,7 +358,7 @@ exports[`DateMonthYearField component Props styleInput 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Month"
+    placeholder="Date"
     returnKeyType="next"
     style={
       Object {
@@ -385,7 +385,7 @@ exports[`DateMonthYearField component Props styleInput 1`] = `
 </View>
 `;
 
-exports[`DateMonthYearField component Props testID 1`] = `
+exports[`MonthDateYearField component Props testID 1`] = `
 <View
   style={
     Array [
@@ -405,7 +405,7 @@ exports[`DateMonthYearField component Props testID 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
+    placeholder="Month"
     returnKeyType="next"
     value=""
   />
@@ -415,7 +415,7 @@ exports[`DateMonthYearField component Props testID 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Month"
+    placeholder="Date"
     returnKeyType="next"
     value=""
   />
@@ -432,7 +432,7 @@ exports[`DateMonthYearField component Props testID 1`] = `
 </View>
 `;
 
-exports[`DateMonthYearField component should match snapshot 1`] = `
+exports[`MonthDateYearField component should match snapshot 1`] = `
 <View
   style={
     Array [
@@ -451,7 +451,7 @@ exports[`DateMonthYearField component should match snapshot 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Date"
+    placeholder="Month"
     returnKeyType="next"
     value=""
   />
@@ -461,7 +461,7 @@ exports[`DateMonthYearField component should match snapshot 1`] = `
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
-    placeholder="Month"
+    placeholder="Date"
     returnKeyType="next"
     value=""
   />
