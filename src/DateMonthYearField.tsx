@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { View, StyleSheet, Keyboard, TextInput } from 'react-native';
 import {
   int,
+  isValidDate,
   formatYearDigits,
   getOnlyNumber,
   getDateDefault,
@@ -17,7 +18,7 @@ const defaultProps: DateFieldProps = {
   editable: true,
 };
 
-const ReactNativeDateField: React.FunctionComponent<DateFieldProps> = ({
+const DateMonthYearField: React.FunctionComponent<DateFieldProps> = ({
   testID,
   containerStyle,
   styleInput,
@@ -63,8 +64,10 @@ const ReactNativeDateField: React.FunctionComponent<DateFieldProps> = ({
   };
 
   const onSubmitEditing = (year: string) => {
-    onSubmit &&
-      onSubmit(new Date(`${year}-${dateValue.month}-${dateValue.date}`));
+    let value: Date = new Date(`${year}-${dateValue.month}-${dateValue.date}`);
+    if (year && isValidDate(value)) {
+      onSubmit && onSubmit(value);
+    }
   };
 
   const onBlur = () => {
@@ -72,8 +75,14 @@ const ReactNativeDateField: React.FunctionComponent<DateFieldProps> = ({
     if (current.date === '0') {
       current.date = '01';
     }
+    if (current.date.length === 1) {
+      current.date = int(current.date).toFixed(2);
+    }
     if (current.month === '0') {
       current.month = '01';
+    }
+    if (current.month.length === 1) {
+      current.month = int(current.month).toFixed(2);
     }
     if (daysInMonth(current.date, current.month) !== current.date) {
       current.date = daysInMonth(current.date, current.month);
@@ -133,5 +142,5 @@ const styles = StyleSheet.create({
   },
 });
 
-ReactNativeDateField.defaultProps = defaultProps;
-export default ReactNativeDateField;
+DateMonthYearField.defaultProps = defaultProps;
+export default DateMonthYearField;

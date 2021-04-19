@@ -67,7 +67,7 @@ describe('DateField component', () => {
       expect(toJson(component)).toMatchSnapshot();
     });
 
-    it('disabled', () => {
+    it('editable', () => {
       const component = shallow(<DateMonthYearField editable={false} />);
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();

@@ -31,7 +31,7 @@ import DateField from 'react-native-datefield';
 />
 
 <DateField
-  disabled
+  editable
   defaultValue={new Date()}
   styleInput={{ fontSize: 15 }}
   containerStyle={{ marginVertical: 20 }}
@@ -50,7 +50,7 @@ import DateField from 'react-native-datefield';
 | labelYear       | `Year`        | string      | add a label for year input |
 | defaultValue    | -             | Date        | an initial value that will change when the user starts typing |
 | onSubmit        | -             | (Date) => {}| callback that is called when blur and return `Date` value |
-| disabled        | `false`       | boolean     | disables the input component |
+| editable        | `false`       | boolean     | if `false`, text is not editable. |
 
 
 ## Contributing

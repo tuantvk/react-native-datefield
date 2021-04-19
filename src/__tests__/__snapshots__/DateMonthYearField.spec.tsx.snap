@@ -15,7 +15,7 @@ exports[`DateField component Props containerStyle 1`] = `
     ]
   }
 >
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -25,7 +25,7 @@ exports[`DateField component Props containerStyle 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -35,7 +35,7 @@ exports[`DateField component Props containerStyle 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -61,7 +61,7 @@ exports[`DateField component Props defaultValue 1`] = `
     ]
   }
 >
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -71,7 +71,7 @@ exports[`DateField component Props defaultValue 1`] = `
     returnKeyType="next"
     value="25"
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -81,7 +81,7 @@ exports[`DateField component Props defaultValue 1`] = `
     returnKeyType="next"
     value="3"
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -94,7 +94,7 @@ exports[`DateField component Props defaultValue 1`] = `
 </View>
 `;
 
-exports[`DateField component Props disabled 1`] = `
+exports[`DateField component Props editable 1`] = `
 <View
   style={
     Array [
@@ -107,7 +107,7 @@ exports[`DateField component Props disabled 1`] = `
     ]
   }
 >
-  <Input
+  <ForwardRef
     editable={false}
     maxLength={2}
     onBlur={[Function]}
@@ -117,7 +117,7 @@ exports[`DateField component Props disabled 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={false}
     maxLength={2}
     onBlur={[Function]}
@@ -127,7 +127,7 @@ exports[`DateField component Props disabled 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={false}
     maxLength={4}
     onBlur={[Function]}
@@ -153,7 +153,7 @@ exports[`DateField component Props labelDate 1`] = `
     ]
   }
 >
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -163,7 +163,7 @@ exports[`DateField component Props labelDate 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -173,7 +173,7 @@ exports[`DateField component Props labelDate 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -199,7 +199,7 @@ exports[`DateField component Props labelMonth 1`] = `
     ]
   }
 >
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -209,7 +209,7 @@ exports[`DateField component Props labelMonth 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -219,7 +219,7 @@ exports[`DateField component Props labelMonth 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -245,7 +245,7 @@ exports[`DateField component Props labelYear 1`] = `
     ]
   }
 >
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -255,7 +255,7 @@ exports[`DateField component Props labelYear 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -265,7 +265,7 @@ exports[`DateField component Props labelYear 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -291,7 +291,7 @@ exports[`DateField component Props onSubmit 1`] = `
     ]
   }
 >
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -301,7 +301,7 @@ exports[`DateField component Props onSubmit 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -311,7 +311,7 @@ exports[`DateField component Props onSubmit 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -337,7 +337,7 @@ exports[`DateField component Props styleInput 1`] = `
     ]
   }
 >
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -352,7 +352,7 @@ exports[`DateField component Props styleInput 1`] = `
     }
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -367,7 +367,7 @@ exports[`DateField component Props styleInput 1`] = `
     }
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -399,7 +399,7 @@ exports[`DateField component Props testID 1`] = `
   }
   testID="date_input"
 >
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -409,7 +409,7 @@ exports[`DateField component Props testID 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -419,7 +419,7 @@ exports[`DateField component Props testID 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -445,7 +445,7 @@ exports[`DateField component should match snapshot 1`] = `
     ]
   }
 >
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -455,7 +455,7 @@ exports[`DateField component should match snapshot 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={2}
     onBlur={[Function]}
@@ -465,7 +465,7 @@ exports[`DateField component should match snapshot 1`] = `
     returnKeyType="next"
     value=""
   />
-  <Input
+  <ForwardRef
     editable={true}
     maxLength={4}
     onBlur={[Function]}

@@ -1,11 +1,14 @@
 import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
-import DateField from 'react-native-datefield';
+import DateField, {
+  MonthDateYearField,
+  YearMonthDateField,
+} from 'react-native-datefield';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <DateField onSubmit={(value) => console.log(value)} />
+      {/* <DateField onSubmit={(value) => console.log(value)} />
       <DateField
         labelDate="Input date"
         labelMonth="Input month"
@@ -17,10 +20,18 @@ const App = () => {
         defaultValue={new Date()}
         styleInput={styles.input}
       />
-      <DateField defaultValue={new Date()} styleInput={styles.input} />
+      <DateField defaultValue={new Date()} styleInput={styles.input} /> */}
       <DateField
-        containerStyle={styles.underline}
-        styleInput={styles.inputUnderline}
+        styleInput={styles.input}
+        onSubmit={(value) => console.log('DateField', value)}
+      />
+      <MonthDateYearField
+        styleInput={styles.input}
+        onSubmit={(value) => console.log('MonthDateYearField', value)}
+      />
+      <YearMonthDateField
+        styleInput={styles.input}
+        onSubmit={(value) => console.log('YearMonthDateField', value)}
       />
     </View>
   );
