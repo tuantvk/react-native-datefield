@@ -1,9 +1,9 @@
 export default (year: number) => {
   const fullYear = new Date().getFullYear();
-  if (!year || year <= 0) {
+  if (!year || year <= 0 || String(year).length === 3) {
     return fullYear;
   }
-  if (year && String(year).length === 4) {
+  if (String(year).length === 4) {
     return year;
   }
   if (year >= 0 && year < 100) {
