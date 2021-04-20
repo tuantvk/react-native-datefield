@@ -4,6 +4,7 @@ import formatYearDigits from './formatYearDigits';
 import getOnlyNumber from './getOnlyNumber';
 import getDateDefault from './getDateDefault';
 import daysInMonth from './daysInMonth';
+import dateInRange from './dateInRange';
 
 export {
   int,
@@ -12,4 +13,5 @@ export {
   getOnlyNumber,
   getDateDefault,
   daysInMonth,
+  dateInRange,
 };
