@@ -25,7 +25,9 @@
 ```sh
 yarn add react-native-datefield
 
-# npm install react-native-datefield
+or
+
+npm install react-native-datefield
 ```
 
 
@@ -33,22 +35,44 @@ yarn add react-native-datefield
 
 ```js
 import DateField from 'react-native-datefield';
+```
 
-<DateField onSubmit={(value) => console.log(value)} />
+or
+
+```js
+const DateField = require('react-native-datefield');
+```
+
+```js
+<DateField
+  styleInput={styles.inputBorder}
+  onSubmit={(value) => console.log(value)}
+/>
 
 <DateField
   labelDate="Input date"
   labelMonth="Input month"
   labelYear="Input year"
+  styleInput={styles.inputBorder}
   onSubmit={(value) => console.log(value)}
 />
 
 <DateField
-  editable
+  editable={false}
   defaultValue={new Date()}
-  styleInput={{ fontSize: 15 }}
+  styleInput={styles.inputBorder}
   containerStyle={{ marginVertical: 20 }}
 />
+
+const styles = StyleSheet.create({
+  inputBorder: {
+    width: '30%',
+    borderRadius: 8,
+    borderColor: '#cacaca',
+    borderWidth: 1,
+    marginBottom: 20,
+  },
+});
 ```
 
 ## Props
@@ -119,6 +143,15 @@ const styles = StyleSheet.create({
 ```
 
 View more example [App.tsx](https://github.com/tuantvk/react-native-datefield/blob/master/example/src/App.tsx).
+
+
+## Running the example app
+
+1. Run `yarn` in repo root
+2. Run `cd example`
+3. Install required pods by running `npx pod-install`
+4. Run `yarn start` to start Metro Bundler
+5. Run `yarn run start:ios` or `yarn run start:android` or `yarn run start:windows`
 
 
 ## Contributing
