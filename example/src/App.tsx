@@ -13,7 +13,7 @@ const App = () => {
         styleInput={styles.underline}
         onSubmit={(value) => console.log(value)}
         maximumDate={new Date(2023, 3, 10)}
-        minimumDate={new Date()}
+        minimumDate={new Date(2021, 4, 21)}
         handleErrors={() => console.log('ERROR')}
       />
       <DateField

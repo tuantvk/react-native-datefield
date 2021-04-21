@@ -7,6 +7,7 @@ import {
   getOnlyNumber,
   getDateDefault,
   daysInMonth,
+  dateInRange,
 } from './utils';
 import Input from './Input';
 import type { DateFieldProps } from './types';
@@ -34,10 +35,11 @@ class YearMonthDateField extends React.Component<DateFieldProps, State> {
 
   onChangeDate = (value: string) => {
     const date = getOnlyNumber(int(value) > 31 ? '31' : value);
-    this.setState({ date });
-    if (date.length === 2) {
-      Keyboard.dismiss();
-    }
+    this.setState({ date }, () => {
+      if (date.length === 2) {
+        Keyboard.dismiss();
+      }
+    });
   };
 
   onChangeMonth = (value: string) => {
@@ -52,17 +54,15 @@ class YearMonthDateField extends React.Component<DateFieldProps, State> {
   };
 
   onChangeYear = (value: string) => {
-    const current: number = new Date().getFullYear();
-    const year = getOnlyNumber(
-      int(value) > current ? current.toString() : value
-    );
+    const year = getOnlyNumber(value);
     this.setState({ year });
-    if (year?.length === 4) {
+    if (year.length === 4) {
       this.refMonth.current?.focus();
     }
   };
 
   onBlur = () => {
+    const { maximumDate, minimumDate, handleErrors, onSubmit } = this.props;
     const current = { ...this.state };
     if (int(current.date) === 0) {
       current.date = '01';
@@ -76,24 +76,31 @@ class YearMonthDateField extends React.Component<DateFieldProps, State> {
     if (current.month.length === 1) {
       current.month = current.month.padStart(2, '0');
     }
-    if (daysInMonth(current) !== current.date) {
-      current.date = daysInMonth(current);
-    }
     if (int(current.year) === 0) {
       current.year = `${new Date().getFullYear()}`;
     }
     if (current.year.length > 1 && current.year.length < 4) {
       current.year = `${formatYearDigits(int(current.year))}`;
     }
-    const value = new Date(`${current.year}-${current.month}-${current.date}`);
-    if (current.year && isValidDate(value)) {
-      this.props.onSubmit && this.props.onSubmit(value);
+    const value = new Date(
+      int(current.year),
+      int(current.month),
+      int(current.date)
+    );
+    if (current.date) {
+      if (
+        (minimumDate || maximumDate) &&
+        !dateInRange(value, minimumDate, maximumDate)
+      ) {
+        handleErrors && handleErrors();
+        this.setState({ date: '', month: '', year: '' });
+      } else {
+        if (isValidDate(value)) {
+          onSubmit && onSubmit(value);
+        }
+        this.setState({ ...current });
+      }
     }
-    this.setState({
-      date: current.date,
-      month: current.month,
-      year: current.year,
-    });
   };
 
   render() {
@@ -114,7 +121,6 @@ class YearMonthDateField extends React.Component<DateFieldProps, State> {
         <Input
           value={year}
           maxLength={4}
-          returnKeyType="done"
           placeholder={labelYear}
           style={styleInput}
           onChangeText={this.onChangeYear}
@@ -135,6 +141,7 @@ class YearMonthDateField extends React.Component<DateFieldProps, State> {
         <Input
           ref={this.refDate}
           value={date}
+          returnKeyType="done"
           placeholder={labelDate}
           style={styleInput}
           onChangeText={this.onChangeDate}

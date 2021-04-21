@@ -54,16 +54,22 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
   onChangeYear = (value: string) => {
     const year = getOnlyNumber(value);
     this.setState({ year }, () => {
-      if (year?.length === 4) {
+      if (year.length === 4) {
         Keyboard.dismiss();
       }
     });
   };
 
   onBlur = () => {
+    const {
+      hideDate,
+      maximumDate,
+      minimumDate,
+      handleErrors,
+      onSubmit,
+    } = this.props;
     const current = { ...this.state };
-    const { maximumDate, minimumDate, handleErrors, onSubmit } = this.props;
-    if (int(current.date) === 0 || this.props.hideDate) {
+    if (int(current.date) === 0 || hideDate) {
       current.date = '01';
     }
     if (current.date.length === 1) {
@@ -74,9 +80,6 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
     }
     if (current.month.length === 1) {
       current.month = current.month.padStart(2, '0');
-    }
-    if (daysInMonth(current) !== current.date) {
-      current.date = daysInMonth(current);
     }
     if (int(current.year) === 0) {
       current.year = `${new Date().getFullYear()}`;
