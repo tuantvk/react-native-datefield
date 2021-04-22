@@ -29,7 +29,6 @@ class YearMonthDateField extends React.Component<DateFieldProps, State> {
 
   state = { ...getDateDefault(this.props.defaultValue) };
 
-  refYear = createRef<TextInput>();
   refMonth = createRef<TextInput>();
   refDate = createRef<TextInput>();
 

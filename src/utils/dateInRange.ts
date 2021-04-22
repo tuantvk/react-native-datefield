@@ -1,14 +1,16 @@
 export default (today: Date, from?: Date, to?: Date) => {
+  let timeToday = today.getTime();
   if (from && to) {
-    const timeFrom = new Date(from).getTime();
-    const timeTo = new Date(to).getTime();
-    return today.getTime() >= timeFrom && today.getTime() <= timeTo;
+    return (
+      timeToday >= new Date(from).getTime() &&
+      timeToday <= new Date(to).getTime()
+    );
   }
   if (from) {
-    return today.getTime() >= new Date(from).getTime();
+    return timeToday >= new Date(from).getTime();
   }
   if (to) {
-    return today.getTime() <= new Date(to).getTime();
+    return timeToday <= new Date(to).getTime();
   }
   return false;
 };

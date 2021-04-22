@@ -1,5 +1,5 @@
 export default (year: number) => {
-  const fullYear = new Date().getFullYear();
+  let fullYear = new Date().getFullYear();
   if (!year || year <= 0 || String(year).length === 3) {
     return fullYear;
   }
