@@ -205,6 +205,15 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
       <a href="https://github.com/tuantvk/react-native-datefield/commits?author=tuantvk" title="Documentation">📖</a>
       <a href="#" title="Examples">💡</a>
     </td>
+    <td align="center">
+      <a href="https://github.com/maxiromanoff">
+        <img src="https://avatars.githubusercontent.com/u/52922596?v=4" width="64px;" alt="maxiromanoff" />
+        <br />
+        <sub><b>maxiromanoff</b></sub>
+      </a>
+      <br />
+      <a href="#" title="Documentation">📖</a>
+    </td>
   </tr>
 </table>
 
