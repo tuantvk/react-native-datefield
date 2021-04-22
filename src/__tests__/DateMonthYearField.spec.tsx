@@ -73,10 +73,38 @@ describe('DateMonthYearField component', () => {
       expect(toJson(component)).toMatchSnapshot();
     });
 
+    it('hideDate', () => {
+      const component = shallow(<DateMonthYearField hideDate />);
+      expect(component.length).toBe(1);
+      expect(toJson(component)).toMatchSnapshot();
+    });
+
     it('placeholderTextColor', () => {
       const component = shallow(
         <DateMonthYearField placeholderTextColor="#000000" />
       );
+      expect(component.length).toBe(1);
+      expect(toJson(component)).toMatchSnapshot();
+    });
+
+    it('maximumDate', () => {
+      const component = shallow(
+        <DateMonthYearField maximumDate={new Date(2023, 3, 12)} />
+      );
+      expect(component.length).toBe(1);
+      expect(toJson(component)).toMatchSnapshot();
+    });
+
+    it('minimumDate', () => {
+      const component = shallow(
+        <DateMonthYearField minimumDate={new Date(2020, 3, 12)} />
+      );
+      expect(component.length).toBe(1);
+      expect(toJson(component)).toMatchSnapshot();
+    });
+
+    it('handleErrors', () => {
+      const component = shallow(<DateMonthYearField handleErrors={() => {}} />);
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });

@@ -12,4 +12,7 @@ export type DateFieldProps = {
   editable?: boolean;
   hideDate?: boolean;
   placeholderTextColor?: string;
+  maximumDate?: Date;
+  minimumDate?: Date;
+  handleErrors?(): void;
 };

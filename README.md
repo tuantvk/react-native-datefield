@@ -25,7 +25,9 @@
 ```sh
 yarn add react-native-datefield
 
-# npm install react-native-datefield
+or
+
+npm install react-native-datefield
 ```
 
 
@@ -33,39 +35,66 @@ yarn add react-native-datefield
 
 ```js
 import DateField from 'react-native-datefield';
+```
 
-<DateField onSubmit={(value) => console.log(value)} />
+or
+
+```js
+const DateField = require('react-native-datefield');
+```
+
+```js
+<DateField
+  styleInput={styles.inputBorder}
+  onSubmit={(value) => console.log(value)}
+/>
 
 <DateField
   labelDate="Input date"
   labelMonth="Input month"
   labelYear="Input year"
+  defaultValue={new Date()}
+  styleInput={styles.inputBorder}
   onSubmit={(value) => console.log(value)}
 />
 
 <DateField
-  editable
-  defaultValue={new Date()}
-  styleInput={{ fontSize: 15 }}
-  containerStyle={{ marginVertical: 20 }}
+  editable={false}
+  styleInput={styles.inputBorder}
+  maximumDate={new Date(2023, 3, 10)}
+  minimumDate={new Date(2021, 4, 21)}
+  handleErrors={() => console.log('ERROR')}
 />
+
+const styles = StyleSheet.create({
+  inputBorder: {
+    width: '30%',
+    borderRadius: 8,
+    borderColor: '#cacaca',
+    borderWidth: 1,
+    marginBottom: 20,
+  },
+});
 ```
 
 ## Props
 
-| Property        | Default       | Option      | Description  |
-| --------------- |:-------------:|:-----------:|:------------:|
-| testID          | -             | string      | used to locate this view in end-to-end tests |
-| containerStyle  | -             | ViewStyle   | styling for view containing the input |
-| styleInput      | -             | TextStyle   | style that will be passed to the `style` props of the React Native `TextInput` |
-| labelDate       | `Date`        | string      | add a label for date input |
-| labelMonth      | `Month`       | string      | add a label for month input |
-| labelYear       | `Year`        | string      | add a label for year input |
-| defaultValue    | -             | Date        | an initial value that will change when the user starts typing |
-| onSubmit        | -             | (Date) => {}| callback that is called when blur and return `Date` value |
-| editable        | `false`       | boolean     | if `false`, text is not editable |
-| hideDate        | `false`       | boolean     | if `true`, `Date` input is not display, only support `DateField` |
-| placeholderTextColor | -        | string      | the text color of the placeholder string |
+| Property        | Default   | Option      | Description  |
+| --------------- |:---------:|:-----------:|:------------:|
+| testID          | -         | string      | used to locate this view in end-to-end tests |
+| containerStyle  | -         | ViewStyle   | styling for view containing the input |
+| styleInput      | -         | TextStyle   | style that will be passed to the `style` props of the React Native `TextInput` |
+| labelDate       | `Date`    | string      | add a label for date input |
+| labelMonth      | `Month`   | string      | add a label for month input |
+| labelYear       | `Year`    | string      | add a label for year input |
+| defaultValue    | -         | Date        | an initial value that will change when the user starts typing |
+| onSubmit        | -         | (Date) => {}| callback that is called when blur and return `Date` value |
+| editable        | `false`   | boolean     | if `false`, text is not editable |
+| hideDate        | `false`   | boolean     | if `true`, `Date` input is not display, only support `DateField` |
+| placeholderTextColor | -    | string      | the text color of the placeholder string |
+| maximumDate     | -         | Date        | defines the maximum date that can be filled |
+| minimumDate     | -         | Date        | defines the minimum date that can be filled |
+| handleErrors    | -         | void        | this is called when the user fills the date invalid |
 
 
 ## Example
@@ -119,6 +148,40 @@ const styles = StyleSheet.create({
 ```
 
 View more example [App.tsx](https://github.com/tuantvk/react-native-datefield/blob/master/example/src/App.tsx).
+
+
+## Running the example app
+
+1. Run `yarn` in repo root
+2. Run `yarn example android` or `yarn example ios`
+3. Run `yarn example start` to start Metro Bundler
+
+
+## Troubleshooting
+
+#### When using `maximumDate` or `minimumDate` return wrong value
+
+If you use `maximumDate` or `minimumDate`, you should set default date to `new Date()`.
+
+Example:
+
+```js
+// don't
+<DateField
+  ...
+  maximumDate={new Date()}
+  minimumDate={new Date()}
+/>
+```
+
+```js
+// do
+<DateField
+  ...
+  maximumDate={new Date(2023, 3, 10)}
+  minimumDate={new Date(2021, 4, 21)}
+/>
+```
 
 
 ## Contributing

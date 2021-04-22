@@ -80,5 +80,27 @@ describe('MonthDateYearField component', () => {
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });
+
+    it('maximumDate', () => {
+      const component = shallow(
+        <MonthDateYearField maximumDate={new Date(2023, 3, 12)} />
+      );
+      expect(component.length).toBe(1);
+      expect(toJson(component)).toMatchSnapshot();
+    });
+
+    it('minimumDate', () => {
+      const component = shallow(
+        <MonthDateYearField minimumDate={new Date(2020, 3, 12)} />
+      );
+      expect(component.length).toBe(1);
+      expect(toJson(component)).toMatchSnapshot();
+    });
+
+    it('handleErrors', () => {
+      const component = shallow(<MonthDateYearField handleErrors={() => {}} />);
+      expect(component.length).toBe(1);
+      expect(toJson(component)).toMatchSnapshot();
+    });
   });
 });
