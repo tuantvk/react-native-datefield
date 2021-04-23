@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
 | labelMonth      | `Month`   | string      | add a label for month input |
 | labelYear       | `Year`    | string      | add a label for year input |
 | defaultValue    | -         | Date        | an initial value that will change when the user starts typing |
-| onSubmit        | -         | (Date) => {}| callback that is called when blur and return `Date` value |
+| onSubmit        | -         | (Date) => {}| callback that is called when blur and return `Date` value [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format|
 | editable        | `false`   | boolean     | if `false`, text is not editable |
 | hideDate        | `false`   | boolean     | if `true`, `Date` input is not display, only support `DateField` |
 | placeholderTextColor | -    | string      | the text color of the placeholder string |
@@ -147,6 +147,22 @@ const styles = StyleSheet.create({
 });
 ```
 
+
+#### momentjs
+
+Use [momentjs](https://momentjs.com) parse value from method `onSubmit`.
+
+Example:
+
+```js
+import DateField from 'react-native-datefield';
+import moment from 'moment';
+
+<DateField
+  onSubmit={(value) => console.log(moment(value).format("DD/MM/YYYY"))}
+/>
+```
+
 View more example [App.tsx](https://github.com/tuantvk/react-native-datefield/blob/master/example/src/App.tsx).
 
 
@@ -178,8 +194,8 @@ Example:
 // do
 <DateField
   ...
-  maximumDate={new Date(2023, 3, 10)}
-  minimumDate={new Date(2021, 4, 21)}
+  maximumDate={new Date(2023, 3, 10)} // new Date(year, monthIndex, day)
+  minimumDate={new Date(2021, 4, 21)} // new Date(year, monthIndex, day)
 />
 ```
 
@@ -219,4 +235,4 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 ## License
 
-MIT
+[MIT](LICENSE)

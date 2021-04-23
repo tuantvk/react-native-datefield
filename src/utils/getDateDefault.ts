@@ -2,7 +2,7 @@ export default (value: Date | undefined) => {
   if (value) {
     return {
       date: String(value.getDate()),
-      month: String(value.getMonth() + 1),
+      month: String(value.getMonth() + 1), // new Date(year, monthIndex, day)
       year: String(value.getFullYear()),
     };
   }
