@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
 
 #### momentjs
 
-Use [momentjs](https://momentjs.com) parse value from method `onSubmit`.
+Use [momentjs](https://momentjs.com) parse value from `onSubmit` function.
 
 Example:
 
