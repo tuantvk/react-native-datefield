@@ -83,7 +83,7 @@ class YearMonthDateField extends React.Component<DateFieldProps, State> {
     }
     const value = new Date(
       int(current.year),
-      int(current.month),
+      int(current.month) - 1, // new Date(year, monthIndex, day)
       int(current.date)
     );
     if (current.date) {

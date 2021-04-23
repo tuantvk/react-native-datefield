@@ -79,6 +79,11 @@ describe('DateMonthYearField component', () => {
       expect(toJson(component)).toMatchSnapshot();
     });
 
+    it('hideDate - check total length TextInput', () => {
+      const component = shallow(<DateMonthYearField hideDate />);
+      expect(component.find('ForwardRef')).toHaveLength(2);
+    });
+
     it('placeholderTextColor', () => {
       const component = shallow(
         <DateMonthYearField placeholderTextColor="#000000" />
