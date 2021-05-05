@@ -15,27 +15,23 @@ exports[`DateMonthYearField component Props containerStyle 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -61,27 +57,23 @@ exports[`DateMonthYearField component Props defaultValue 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value="25"
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value="3"
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -107,27 +99,23 @@ exports[`DateMonthYearField component Props editable 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={false}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={false}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={false}
     maxLength={4}
     onBlur={[Function]}
@@ -153,27 +141,23 @@ exports[`DateMonthYearField component Props handleErrors 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -199,17 +183,15 @@ exports[`DateMonthYearField component Props hideDate 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -235,27 +217,23 @@ exports[`DateMonthYearField component Props labelDate 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Input date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -281,27 +259,23 @@ exports[`DateMonthYearField component Props labelMonth 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Input month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -327,27 +301,23 @@ exports[`DateMonthYearField component Props labelYear 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -373,27 +343,23 @@ exports[`DateMonthYearField component Props maximumDate 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -419,27 +385,23 @@ exports[`DateMonthYearField component Props minimumDate 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -465,27 +427,23 @@ exports[`DateMonthYearField component Props onSubmit 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -511,29 +469,25 @@ exports[`DateMonthYearField component Props placeholderTextColor 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
     placeholderTextColor="#000000"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
     placeholderTextColor="#000000"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -560,14 +514,12 @@ exports[`DateMonthYearField component Props styleInput 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     style={
       Object {
         "fontSize": 15,
@@ -575,14 +527,12 @@ exports[`DateMonthYearField component Props styleInput 1`] = `
     }
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     style={
       Object {
         "fontSize": 15,
@@ -590,7 +540,7 @@ exports[`DateMonthYearField component Props styleInput 1`] = `
     }
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -622,27 +572,23 @@ exports[`DateMonthYearField component Props testID 1`] = `
   }
   testID="date_input"
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}
@@ -668,27 +614,23 @@ exports[`DateMonthYearField component should match snapshot 1`] = `
     ]
   }
 >
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Date"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
-    maxLength={2}
     onBlur={[Function]}
     onChangeText={[Function]}
     onSubmitEditing={[Function]}
     placeholder="Month"
-    returnKeyType="next"
     value=""
   />
-  <ForwardRef
+  <Memo(ForwardRef)
     editable={true}
     maxLength={4}
     onBlur={[Function]}

@@ -62,7 +62,7 @@ describe('DateMonthYearField component', () => {
     });
 
     it('onSubmit', () => {
-      const component = shallow(<DateMonthYearField onSubmit={() => {}} />);
+      const component = shallow(<DateMonthYearField onSubmit={() => { }} />);
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });
@@ -81,7 +81,7 @@ describe('DateMonthYearField component', () => {
 
     it('hideDate - check total length TextInput', () => {
       const component = shallow(<DateMonthYearField hideDate />);
-      expect(component.find('ForwardRef')).toHaveLength(2);
+      expect(component.find('Memo(ForwardRef)')).toHaveLength(2);
     });
 
     it('placeholderTextColor', () => {
@@ -109,7 +109,7 @@ describe('DateMonthYearField component', () => {
     });
 
     it('handleErrors', () => {
-      const component = shallow(<DateMonthYearField handleErrors={() => {}} />);
+      const component = shallow(<DateMonthYearField handleErrors={() => { }} />);
       expect(component.length).toBe(1);
       expect(toJson(component)).toMatchSnapshot();
     });

@@ -26,5 +26,9 @@ const styles = StyleSheet.create({
   },
 });
 
+const areEqual = (prevProps: TextInputProps, nextProps: TextInputProps) => {
+  return prevProps.value === nextProps.value;
+};
+
 Input.defaultProps = defaultProps;
-export default Input;
+export default React.memo(Input, areEqual);
