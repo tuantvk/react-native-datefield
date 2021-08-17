@@ -32,6 +32,21 @@ class DateMonthYearField extends React.Component<DateFieldProps, State> {
   refMonth = createRef<TextInput>();
   refYear = createRef<TextInput>();
 
+  UNSAFE_componentWillReceiveProps(nextProps: DateFieldProps) {
+    if (
+      JSON.stringify(getDateDefault(nextProps.value)) !==
+      JSON.stringify(getDateDefault(this.props.value))
+    ) {
+      const { date, month, year } = getDateDefault(nextProps.value);
+      const nextState = {
+        date: date ? date.padStart(2, '0') : '',
+        month: month ? month.padStart(2, '0') : '',
+        year,
+      };
+      this.setState(nextState);
+    }
+  }
+
   onChangeDate = (value: string) => {
     const date = getOnlyNumber(int(value) > 31 ? '31' : value);
     this.setState({ date });

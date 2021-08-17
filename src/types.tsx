@@ -8,6 +8,7 @@ export type DateFieldProps = {
   labelMonth?: string;
   labelYear?: string;
   defaultValue?: Date;
+  value?: Date | null;
   onSubmit?(value: Date): void;
   editable?: boolean;
   hideDate?: boolean;

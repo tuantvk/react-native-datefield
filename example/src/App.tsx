@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Button } from 'react-native';
 import DateField, {
   MonthDateYearField,
   YearMonthDateField,
 } from 'react-native-datefield';
 
 const App = () => {
+  const [date, setDate] = React.useState<Date | null>(null);
+
   return (
     <View style={styles.container}>
       <DateField onSubmit={(value) => console.log(value)} />
@@ -33,10 +35,14 @@ const App = () => {
         containerStyle={styles.inputBackground}
         onSubmit={(value) => console.log('MonthDateYearField', value)}
       />
+      <View style={styles.spacer} />
       <YearMonthDateField
+        value={date}
         styleInput={styles.inputBorder}
-        onSubmit={(value) => console.log('YearMonthDateField', value)}
+        onSubmit={(value) => setDate(value)}
       />
+      <Button title="Show value" onPress={() => console.log(date)} />
+      <Button title="Reset value" onPress={() => setDate(null)} />
     </View>
   );
 };
@@ -75,6 +81,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#f4f4f4',
     paddingHorizontal: 25,
     marginBottom: 20,
+  },
+  spacer: {
+    borderTopColor: '#cacaca',
+    borderTopWidth: 1,
+    paddingTop: 20,
   },
 });
 

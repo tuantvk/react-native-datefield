@@ -87,9 +87,10 @@ const styles = StyleSheet.create({
 | labelDate       | `Date`    | string      | add a label for date input |
 | labelMonth      | `Month`   | string      | add a label for month input |
 | labelYear       | `Year`    | string      | add a label for year input |
+| value           | -         | Date        | defines the date value used in the component |
 | defaultValue    | -         | Date        | an initial value that will change when the user starts typing |
 | onSubmit        | -         | (Date) => {}| callback that is called when blur and return `Date` value [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format|
-| editable        | `false`   | boolean     | if `false`, text is not editable |
+| editable        | `true`    | boolean     | if `false`, text is not editable |
 | hideDate        | `false`   | boolean     | if `true`, `Date` input is not display, only support `DateField` |
 | placeholderTextColor | -    | string      | the text color of the placeholder string |
 | maximumDate     | -         | Date        | defines the maximum date that can be filled |

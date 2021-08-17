@@ -1,4 +1,4 @@
-export default (value: Date | undefined) => {
+export default (value?: Date | null) => {
   if (value) {
     return {
       date: String(value.getDate()),
