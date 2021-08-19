@@ -84,6 +84,7 @@ const styles = StyleSheet.create({
 | testID          | -         | string      | used to locate this view in end-to-end tests |
 | containerStyle  | -         | ViewStyle   | styling for view containing the input |
 | styleInput      | -         | TextStyle   | style that will be passed to the `style` props of the React Native `TextInput` |
+| styleInputYear  | -         | TextStyle   | style only for year input |
 | labelDate       | `Date`    | string      | add a label for date input |
 | labelMonth      | `Month`   | string      | add a label for month input |
 | labelYear       | `Year`    | string      | add a label for year input |

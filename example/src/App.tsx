@@ -39,6 +39,7 @@ const App = () => {
       <YearMonthDateField
         value={date}
         styleInput={styles.inputBorder}
+        styleInputYear={styles.inputYear}
         onSubmit={(value) => setDate(value)}
       />
       <Button title="Show value" onPress={() => console.log(date)} />
@@ -86,6 +87,10 @@ const styles = StyleSheet.create({
     borderTopColor: '#cacaca',
     borderTopWidth: 1,
     paddingTop: 20,
+  },
+  inputYear: {
+    width: '40%',
+    backgroundColor: 'red',
   },
 });
 

@@ -123,6 +123,7 @@ class MonthDateYearField extends React.Component<DateFieldProps, State> {
       testID,
       containerStyle,
       styleInput,
+      styleInputYear,
       labelDate,
       labelMonth,
       labelYear,
@@ -157,7 +158,7 @@ class MonthDateYearField extends React.Component<DateFieldProps, State> {
           maxLength={4}
           returnKeyType="done"
           placeholder={labelYear}
-          style={styleInput}
+          style={[styleInput, styleInputYear]}
           onChangeText={this.onChangeYear}
           onSubmitEditing={() => Keyboard.dismiss()}
           onBlur={this.onBlur}

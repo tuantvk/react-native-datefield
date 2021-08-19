@@ -4,6 +4,7 @@ export type DateFieldProps = {
   testID?: string;
   containerStyle?: StyleProp<ViewStyle>;
   styleInput?: StyleProp<TextStyle>;
+  styleInputYear?: StyleProp<TextStyle>;
   labelDate?: string;
   labelMonth?: string;
   labelYear?: string;
