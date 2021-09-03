@@ -92,6 +92,7 @@ const styles = StyleSheet.create({
 | defaultValue    | -         | Date        | an initial value that will change when the user starts typing |
 | onSubmit        | -         | (Date) => {}| callback that is called when blur and return `Date` value [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format|
 | editable        | `true`    | boolean     | if `false`, text is not editable |
+| autoFocus       | `false`   | boolean     | if `true`, auto focus to the first input |
 | hideDate        | `false`   | boolean     | if `true`, `Date` input is not display, only support `DateField` |
 | placeholderTextColor | -    | string      | the text color of the placeholder string |
 | maximumDate     | -         | Date        | defines the maximum date that can be filled |

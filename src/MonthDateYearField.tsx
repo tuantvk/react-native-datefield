@@ -30,7 +30,14 @@ class MonthDateYearField extends React.Component<DateFieldProps, State> {
   state = { ...getDateDefault(this.props.defaultValue) };
 
   refDate = createRef<TextInput>();
+  refMonth = createRef<TextInput>();
   refYear = createRef<TextInput>();
+
+  componentDidMount() {
+    if (this.props.autoFocus) {
+      this.refMonth.current?.focus();
+    }
+  }
 
   UNSAFE_componentWillReceiveProps(nextProps: DateFieldProps) {
     if (
@@ -134,6 +141,7 @@ class MonthDateYearField extends React.Component<DateFieldProps, State> {
     return (
       <View {...{ testID }} style={[styles.container, containerStyle]}>
         <Input
+          ref={this.refMonth}
           value={month}
           placeholder={labelMonth}
           style={styleInput}

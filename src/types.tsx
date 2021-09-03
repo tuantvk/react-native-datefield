@@ -17,4 +17,5 @@ export type DateFieldProps = {
   maximumDate?: Date;
   minimumDate?: Date;
   handleErrors?(): void;
+  autoFocus?: boolean;
 };
