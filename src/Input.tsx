@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
 });
 
 Input.defaultProps = defaultProps;
-export default Input;
+export default React.memo(Input);
