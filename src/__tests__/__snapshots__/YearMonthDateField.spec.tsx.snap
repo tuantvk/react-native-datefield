@@ -39,6 +39,12 @@ exports[`YearMonthDateField component Props containerStyle 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -81,6 +87,12 @@ exports[`YearMonthDateField component Props defaultValue 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value="25"
   />
 </View>
@@ -123,6 +135,12 @@ exports[`YearMonthDateField component Props editable 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -165,6 +183,12 @@ exports[`YearMonthDateField component Props handleErrors 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -207,6 +231,12 @@ exports[`YearMonthDateField component Props labelDate 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Input date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -249,6 +279,12 @@ exports[`YearMonthDateField component Props labelMonth 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -291,6 +327,12 @@ exports[`YearMonthDateField component Props labelYear 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -333,6 +375,12 @@ exports[`YearMonthDateField component Props maximumDate 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -375,6 +423,12 @@ exports[`YearMonthDateField component Props minimumDate 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -417,6 +471,12 @@ exports[`YearMonthDateField component Props onSubmit 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -462,6 +522,12 @@ exports[`YearMonthDateField component Props placeholderTextColor 1`] = `
     placeholder="Date"
     placeholderTextColor="#000000"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -515,9 +581,12 @@ exports[`YearMonthDateField component Props styleInput 1`] = `
     placeholder="Date"
     returnKeyType="done"
     style={
-      Object {
-        "fontSize": 15,
-      }
+      Array [
+        Object {
+          "fontSize": 15,
+        },
+        undefined,
+      ]
     }
     value=""
   />
@@ -562,6 +631,12 @@ exports[`YearMonthDateField component Props testID 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -604,6 +679,12 @@ exports[`YearMonthDateField component should match snapshot 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Date"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>

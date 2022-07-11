@@ -39,6 +39,12 @@ exports[`DateMonthYearField component Props containerStyle 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -81,6 +87,12 @@ exports[`DateMonthYearField component Props defaultValue 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value="2021"
   />
 </View>
@@ -123,6 +135,12 @@ exports[`DateMonthYearField component Props editable 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -165,6 +183,12 @@ exports[`DateMonthYearField component Props handleErrors 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -199,6 +223,12 @@ exports[`DateMonthYearField component Props hideDate 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -241,6 +271,12 @@ exports[`DateMonthYearField component Props labelDate 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -283,6 +319,12 @@ exports[`DateMonthYearField component Props labelMonth 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -325,6 +367,12 @@ exports[`DateMonthYearField component Props labelYear 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Input year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -367,6 +415,12 @@ exports[`DateMonthYearField component Props maximumDate 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -409,6 +463,12 @@ exports[`DateMonthYearField component Props minimumDate 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -451,6 +511,12 @@ exports[`DateMonthYearField component Props onSubmit 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -496,6 +562,12 @@ exports[`DateMonthYearField component Props placeholderTextColor 1`] = `
     placeholder="Year"
     placeholderTextColor="#000000"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -549,9 +621,12 @@ exports[`DateMonthYearField component Props styleInput 1`] = `
     placeholder="Year"
     returnKeyType="done"
     style={
-      Object {
-        "fontSize": 15,
-      }
+      Array [
+        Object {
+          "fontSize": 15,
+        },
+        undefined,
+      ]
     }
     value=""
   />
@@ -596,6 +671,12 @@ exports[`DateMonthYearField component Props testID 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
@@ -638,6 +719,12 @@ exports[`DateMonthYearField component should match snapshot 1`] = `
     onSubmitEditing={[Function]}
     placeholder="Year"
     returnKeyType="done"
+    style={
+      Array [
+        undefined,
+        undefined,
+      ]
+    }
     value=""
   />
 </View>
